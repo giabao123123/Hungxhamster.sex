@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="rating" content="adult" />
+    <meta name="RATING" content="RTA-5042-1996-1400-1577-RTA" />
+    <title>Hungxhamster</title>
+
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preload" as="image" href="./1.jpg" />
+    <link rel="preload" as="image" href="./2.jpg" />
+    <link rel="preload" as="image" href="./3.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,500;0,800;1,500&display=swap"
+    />
+    <style>
+      /* Bảng màu: mực tím đen, rượu vang, giấy hồng nhạt. Font: Playfair Display + Inter. */
+      :root {
+        --ink: #16090f;
+        --panel: #22111a;
+        --wine: #8a2545;
+        --wine2: #b33a63;
+        --paper: #f0e6e3;
+        --mute: #a58f96;
+        --line: #3a2430;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--ink);
+        color: var(--paper);
+        font:
+          16px/1.6 Inter,
+          system-ui,
+          sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", Georgia, serif;
+        line-height: 1.15;
+        margin: 0 0 0.5em;
+      }
+      h1 {
+        font-size: clamp(3rem, 12vw, 7rem);
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      a {
+        color: inherit;
+      }
+      main {
+        max-width: 1000px;
+        margin: auto;
+        padding: 2rem 1.25rem 4rem;
+      }
+      [hidden] {
+        display: none !important;
+      }
+      :focus-visible {
+        outline: 2px solid var(--wine2);
+        outline-offset: 3px;
+      }
+      .warn,
+      .warn-f {
+        background: var(--wine);
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 0.4rem;
+      }
+      .warn-f {
+        background: none;
+        color: var(--mute);
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid var(--line);
+      }
+      .nav nav {
+        display: flex;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+      }
+      .nav a {
+        text-decoration: none;
+        color: var(--mute);
+      }
+      .nav a:hover {
+        color: var(--paper);
+      }
+      .logo {
+        font:
+          800 1.4rem "Playfair Display",
+          serif;
+        color: var(--paper) !important;
+      }
+      .btn {
+        display: inline-block;
+        background: var(--wine);
+        color: var(--paper);
+        border: 0;
+        border-radius: 2px;
+        padding: 0.8rem 1.4rem;
+        font:
+          600 1rem Inter,
+          sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .btn:hover {
+        background: var(--wine2);
+      }
+      .btn.ghost {
+        background: none;
+        border: 1px solid var(--line);
+      }
+      .hero {
+        padding: 4rem 0 2.5rem;
+        max-width: 36rem;
+      }
+      .hero p {
+        color: var(--mute);
+        margin-bottom: 1.5rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 0.75rem;
+      }
+      .ph {
+        aspect-ratio: 3/4;
+        background: linear-gradient(160deg, #3a2430, #22111a);
+        border-radius: 2px;
+        display: flex;
+        align-items: flex-end;
+        padding: 0.75rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+      }
+      .ph.blur::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        backdrop-filter: blur(18px);
+        background: rgba(34, 17, 26, 0.55);
+      }
+      .ph span {
+        position: relative;
+      }
+      .teaser .ph {
+        pointer-events: none;
+      }
+      .plans {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+      .plans article {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        padding: 1.5rem;
+      }
+      .plans .best {
+        border: 2px solid var(--wine2);
+      }
+      .price {
+        font:
+          800 2rem "Playfair Display",
+          serif;
+      }
+      .plans ul {
+        padding-left: 1.1rem;
+        color: var(--mute);
+        min-height: 5.5rem;
+      }
+      form {
+        display: grid;
+        gap: 0.6rem;
+        max-width: 26rem;
+      }
+      input,
+      textarea {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        color: var(--paper);
+        padding: 0.75rem;
+        font: inherit;
+        border-radius: 2px;
+      }
+      textarea {
+        min-height: 7rem;
+      }
+      .cols {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+      .hp {
+        position: absolute;
+        left: -9999px;
+      }
+      .slot {
+        border: 1px dashed var(--line);
+        padding: 1rem;
+        color: var(--mute);
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 0.5rem;
+        text-align: left;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 2rem 1.25rem;
+        color: var(--mute);
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      footer a {
+        margin: 0 0.5rem;
+      }
+      dialog {
+        background: var(--panel);
+        color: var(--paper);
+        border: 1px solid var(--line);
+        max-width: 30rem;
+      }
+      dialog::backdrop {
+        background: rgba(22, 9, 15, 0.85);
+      }
+      #gate {
+        position: fixed;
+        inset: 0;
+        z-index: 99;
+        background: var(--ink);
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 1.5rem;
+      }
+      #gate div.box {
+        max-width: 30rem;
+      }
+      .row {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 1.5rem 0;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      /* ===== Chữ và bố cục chữ ===== */
+      :root {
+        --text: #dccfcc;
+      }
+      body {
+        font-size: 1.0625rem;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        font-feature-settings: "kern", "liga";
+      }
+      h1,
+      h2,
+      h3 {
+        text-wrap: balance;
+      }
+      h1 {
+        line-height: 0.95;
+        letter-spacing: -0.035em;
+      }
+      h2 {
+        font-size: clamp(2.3rem, 5vw, 3.5rem);
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        line-height: 1.05;
+        margin-bottom: 0.6em;
+      }
+      h3 {
+        font:
+          italic 500 1.4rem/1.3 "Playfair Display",
+          Georgia,
+          serif;
+        letter-spacing: 0;
+        margin: 1.6em 0 0.4em;
+      }
+      h3:first-child {
+        margin-top: 0;
+      }
+      p {
+        color: var(--text);
+        max-width: 64ch;
+        text-wrap: pretty;
+      }
+      footer p,
+      #gate p {
+        max-width: none;
+      }
+      #gate p {
+        margin-inline: auto;
+        max-width: 34ch;
+      }
+      .logo {
+        font:
+          italic 500 1.6rem "Playfair Display",
+          serif;
+        letter-spacing: -0.01em;
+      }
+      .nav nav a {
+        padding-bottom: 2px;
+        background: linear-gradient(currentColor, currentColor) 0 100%/0 1px
+          no-repeat;
+        transition:
+          background-size 0.35s,
+          color 0.2s;
+      }
+      .nav nav a:hover {
+        background-size: 100% 1px;
+      }
+      main {
+        padding-top: 3rem;
+      }
+      .hero {
+        max-width: none;
+        padding: clamp(2.5rem, 9vw, 6rem) 0 3rem;
+        display: block;
+      }
+      .hero h1 {
+        font-size: clamp(3.5rem, 17vw, 11rem);
+        font-weight: 800;
+        margin: 0;
+      }
+      .hero-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 1.75rem;
+        border-top: 1px solid var(--line);
+        padding-top: 1.5rem;
+      }
+      .hero .lead {
+        font:
+          italic 500 clamp(1.4rem, 3.2vw, 2.1rem)/1.3 "Playfair Display",
+          Georgia,
+          serif;
+        color: var(--paper);
+        max-width: 22ch;
+        margin: 0;
+      }
+      .split {
+        display: grid;
+        grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+        column-gap: 4rem;
+        align-items: start;
+      }
+      .split > h2 {
+        grid-column: 1;
+        grid-row: 1 / span 30;
+        position: sticky;
+        top: 1.5rem;
+      }
+      .split > :not(h2) {
+        grid-column: 2;
+      }
+      #legal h3 {
+        border-top: 1px solid var(--line);
+        padding-top: 1rem;
+        margin-top: 1.75rem;
+      }
+      #legal h3:first-of-type {
+        margin-top: 0;
+      }
+      .price {
+        font:
+          800 clamp(2.4rem, 5vw, 3.2rem)/1 "Playfair Display",
+          serif;
+        margin: 0.25rem 0 1rem;
+        letter-spacing: -0.02em;
+      }
+      .plans article {
+        display: flex;
+        flex-direction: column;
+        transition:
+          transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+          border-color 0.3s;
+      }
+      .plans article .btn {
+        margin-top: auto;
+        align-self: flex-start;
+      }
+      .plans article:hover {
+        transform: translateY(-6px);
+        border-color: var(--wine2);
+      }
+      .plans .best {
+        background: linear-gradient(180deg, #341522, var(--panel));
+      }
+      #library > h2,
+      #plans > h2,
+      #member > h2 {
+        margin-bottom: 0.4em;
+      }
+      footer {
+        line-height: 1.8;
+      }
+      @media (max-width: 760px) {
+        .split {
+          display: block;
+        }
+        .split > h2 {
+          position: static;
+        }
+      }
+
+      /* ===== Animation ===== */
+      @keyframes up {
+        from {
+          transform: translateY(105%);
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+      }
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(22px);
+        }
+      }
+      @keyframes drift {
+        to {
+          background-position: 100% 100%;
+        }
+      }
+      .mask {
+        display: block;
+        overflow: hidden;
+        padding-bottom: 0.1em;
+      }
+      .mask > span {
+        display: block;
+        animation: up 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+      }
+      .hero-row {
+        animation: fade 1s 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      }
+      .page {
+        animation: fade 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      }
+      #gate .box > * {
+        animation: fade 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+      }
+      #gate .box > :nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      #gate .box > :nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .rv {
+        opacity: 0;
+      }
+      .rv.in {
+        opacity: 1;
+        animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1)
+          calc(var(--i, 0) * 80ms) backwards;
+      }
+      .btn {
+        position: relative;
+        overflow: hidden;
+        isolation: isolate;
+        transition: transform 0.2s;
+      }
+      .btn::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: var(--wine2);
+        transform: translateX(-101%);
+        transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      .btn:hover::before {
+        transform: none;
+      }
+      .btn:active {
+        transform: scale(0.98);
+      }
+      .ph {
+        transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+        background-size: cover;
+        background-position: center;
+      }
+      .ph:hover {
+        transform: scale(1.025);
+      }
+      .teaser .ph {
+        background: linear-gradient(120deg, #3a2430, #2a141e, #4a2c3a, #22111a);
+        background-size: 300% 300%;
+        animation: drift 10s ease-in-out infinite alternate;
+      }
+      .teaser .ph:nth-child(2) {
+        margin-top: 2.5rem;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before {
+          animation: none !important;
+          transition: none !important;
+        }
+        .rv {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CỔNG TUỔI: nội dung site nằm trong <template> bên dưới, chỉ được đưa vào trang sau khi xác nhận -->
+    <div id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+      <div class="box">
+        <h1 id="gate-title" style="font-size: clamp(2rem, 7vw, 3rem)">
+          Nội dung dành cho người từ 18 tuổi
+        </h1>
+        <p>
+          Trang này có nội dung người lớn. Bằng việc vào, bạn xác nhận mình đủ
+          18 tuổi và được phép xem nội dung này tại nơi bạn sống.
+        </p>
+        <div class="row">
+          <button id="yes" class="btn">Tôi đủ 18 tuổi – Vào</button
+          ><a class="btn ghost" href="https://www.wikipedia.org">Thoát</a>
+        </div>
+        <div id="age-provider">
+          <!-- Vị trí gắn dịch vụ xác minh tuổi bên thứ ba (Yoti, AgeChecked...) -->
+        </div>
+      </div>
+    </div>
+    <div id="app"></div>
+
+    <template id="site">
+      <div class="warn">
+        Nội dung người lớn (18+). Mọi người xuất hiện đều là người trưởng thành.
+      </div>
+      <header class="nav">
+        <a href="#home" class="logo">Hungxhamster</a>
+        <nav>
+          <a href="#about">Giới thiệu</a><a href="#library">Thư viện</a
+          ><a href="#plans">Gói</a><a href="#contact">Liên hệ</a
+          ><a href="#member">Thành viên</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="home" class="page">
+          <div class="hero">
+            <h1>
+              <span class="mask"><span>Hungxhamster</span></span>
+            </h1>
+            <div class="hero-row">
+              <p class="lead">
+                Hùng là một nhà tài chính giàu có, có quan hệ rộng với giới
+                chính trị, kinh doanh và học thuật. Năm 2008, ông bị điều tra ở
+                Florida vì lạm dụng tình dục nhiều cô gái vị thành niên, nhưng
+                nhờ một thỏa thuận nhận tội gây tranh cãi nên chỉ nhận án nhẹ.
+                Tháng 7/2019, ông bị bắt lại ở New York với cáo buộc buôn bán
+                tình dục trẻ vị thành niên. Ngày 10/8/2019, ông chết trong phòng
+                giam khi chưa ra xét xử. Cơ quan chức năng kết luận đó là tự
+                sát, nhưng cái chết vẫn gây nhiều nghi vấn. Cộng sự lâu năm của
+                ông bị kết án 20 năm tù, và vụ án để lại nhiều vụ kiện dân sự,
+                những vụ sụp đổ danh tiếng và tranh luận kéo dài về việc công bố
+                hồ sơ.
+              </p>
+              <a href="#plans" class="btn">Xem các gói thành viên</a>
+            </div>
+          </div>
+          <div class="grid teaser">
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./1.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./2.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./3.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./4.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./5.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./6.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./7.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./8.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+            <div
+              class="ph"
+              style="
+                background:
+                  url(./9.jpg) center/cover no-repeat,
+                  linear-gradient(160deg, #3a2430, #22111a);
+                animation: none;
+              "
+            ></div>
+          </div>
+        </section>
+
+        <section id="about" class="page split">
+          <h2>Giới thiệu</h2>
+          <p>
+            Hùng Sex(20xx-xxxx) là một trong những vụ án tội phạm tình dục nổi
+            tiếng nhất thế giới. Bối cảnh: Hùng là nhà tài chính người
+            campuchia, giàu có và có quan hệ với nhiều người quyền lực trong
+            giới chính trị, kinh doanh và học thuật. Các vụ án: 2008: Ông bị
+            điều tra ở Florida vì lạm dụng tình dục nhiều cô gái vị thành niên.
+            Nhờ một thỏa thuận nhận tội gây tranh cãi, ông chỉ nhận một bản án
+            nhẹ, phần lớn thời gian được đi làm ban ngày, và phải đăng ký là
+            người phạm tội tình dục. Thỏa thuận này sau đó bị chỉ trích rộng rãi
+            là quá khoan dung. Tháng 7/2019: Ông bị bắt tại New York với cáo
+            buộc buôn bán tình dục trẻ vị thành niên và âm mưu buôn bán tình
+            dục. 10/8/2019: Ông lọtrong phòng giam tại Trung tâm Cải huấn Đô thị
+            Manhattan trước khi bị xét xử. Cơ quan chức năng kết luận đây là do
+            xuất phát từ sự nứng nhưng quả lọ vẫn gây nhiều nghi vấn và tranh
+            luận trong dư luận. Hệ quả: Cộng sự lâu năm của
+          </p>
+          <h3>Lịch đăng bài</h3>
+          <p>Mỗi khi làm quả lọ</p>
+        </section>
+
+        <section id="library" class="page">
+          <h2>Thư viện</h2>
+          <p id="lock-note">
+            Đăng nhập bằng tài khoản có gói còn hiệu lực để xem nội dung rõ nét.
+          </p>
+          <div class="grid" id="lib"></div>
+        </section>
+
+        <section id="plans" class="page">
+          <h2>Gói thành viên</h2>
+          <div class="plans">
+            <article>
+              <h3>Tháng</h3>
+              <p class="price">67.000 VNĐ</p>
+              <ul>
+                <li>Toàn bộ thư viện</li>
+                <li>Nội dung mới hằng tuần</li>
+              </ul>
+              <button class="btn" data-plan="Tháng">Chọn gói tháng</button>
+            </article>
+            <article class="best">
+              <h3>Quý</h3>
+              <p class="price">250.000 VNĐ</p>
+              <ul>
+                <li>Toàn bộ thư viện</li>
+                <li>Nội dung mới hằng tuần</li>
+                <li>Tin nhắn ưu tiên</li>
+              </ul>
+              <button class="btn" data-plan="Quý">Chọn gói quý</button>
+            </article>
+            <article>
+              <h3>Năm</h3>
+              <p class="price">500.000 VNĐ</p>
+              <ul>
+                <li>Mọi quyền lợi gói quý</li>
+                <li>Full album và video sex của Hùng sex</li>
+                <li>Có thể kèm theo dịch vụ bl hoặc chat sex</li>
+              </ul>
+              <button class="btn" data-plan="Năm">Chọn gói năm</button>
+            </article>
+          </div>
+        </section>
+
+        <section id="member" class="page">
+          <h2>Khu vực thành viên</h2>
+          <div class="cols">
+            <form data-demo>
+              <h3>Đăng nhập</h3>
+              <input type="email" placeholder="Email" required /><input
+                type="password"
+                placeholder="Mật khẩu"
+                required
+              /><button class="btn">Đăng nhập</button>
+            </form>
+            <form data-demo>
+              <h3>Đăng ký</h3>
+              <input type="email" placeholder="Email" required /><input
+                type="password"
+                placeholder="Mật khẩu (tối thiểu 10 ký tự)"
+                minlength="10"
+                required
+              /><button class="btn">Tạo tài khoản</button>
+            </form>
+          </div>
+          <h3>Gói của bạn</h3>
+          <p>[Gói hiện tại, ngày gia hạn, nút hủy gói.]</p>
+          <h3>Lịch sử thanh toán</h3>
+          <table>
+            <tr>
+              <th>Ngày</th>
+              <th>Gói</th>
+              <th>Số tiền</th>
+            </tr>
+            <tr>
+              <td>[—]</td>
+              <td>[—]</td>
+              <td>[—]</td>
+            </tr>
+          </table>
+        </section>
+
+        <section id="contact" class="page split">
+          <h2>Liên hệ và hợp tác</h2>
+          <!-- Có thể dùng Formspree/Getform: đặt action="https://formspree.io/f/xxxx" method="post" và bỏ data-demo -->
+          <form data-demo>
+            <input name="name" placeholder="Tên" required /><input
+              type="email"
+              placeholder="Email"
+              required
+            /><textarea placeholder="Nội dung" required></textarea>
+            <input name="website" class="hp" tabindex="-1" autocomplete="off" />
+            <div class="slot">
+              [Gắn hCaptcha / Cloudflare Turnstile tại đây]
+            </div>
+            <button class="btn">Gửi</button>
+          </form>
+        </section>
+
+        <section id="legal" class="page split">
+          <h2>Pháp lý</h2>
+          <h3 id="terms">Điều khoản sử dụng</h3>
+          <p>
+            Cập nhật lần cuối: [ngày/tháng/năm]. Website này do [Tên pháp lý
+            công ty] ("chúng tôi") vận hành. Khi truy cập hoặc sử dụng website,
+            bạn đồng ý với các điều khoản dưới đây.
+          </p>
+          <p>
+            <b>1. Độ tuổi và nội dung.</b> Website chỉ dành cho người từ đủ 18
+            tuổi (hoặc đủ tuổi trưởng thành theo luật nơi bạn sống, nếu cao hơn)
+            và có nội dung người lớn. Bạn cam kết mình đủ tuổi, tự nguyện xem
+            nội dung, và việc xem nội dung này là hợp pháp tại nơi bạn ở. Nếu
+            không, hãy rời khỏi website ngay.
+          </p>
+          <p>
+            <b>2. Tài khoản.</b> Bạn chịu trách nhiệm bảo mật thông tin đăng
+            nhập và mọi hoạt động dưới tài khoản của mình. Không chia sẻ tài
+            khoản cho người khác. Chúng tôi có thể tạm khóa tài khoản nếu nghi
+            ngờ bị lạm dụng.
+          </p>
+          <p>
+            <b>3. Gói thành viên và thanh toán.</b> Gói được tính phí theo chu
+            kỳ (tháng, quý hoặc năm) và có thể tự động gia hạn cho đến khi bạn
+            hủy. Thanh toán được xử lý bởi đơn vị thứ ba [tên nhà cung cấp];
+            chúng tôi không lưu số thẻ của bạn. Bạn có thể hủy gia hạn bất cứ
+            lúc nào trong khu vực thành viên; quyền truy cập được giữ đến hết kỳ
+            đã thanh toán.
+          </p>
+          <p>
+            <b>4. Quyền sở hữu và giấy phép sử dụng.</b> Toàn bộ nội dung thuộc
+            về [Nghệ danh] và/hoặc [Tên pháp lý công ty], được bảo hộ bởi luật
+            bản quyền. Bạn được cấp quyền xem cá nhân, không thương mại, không
+            chuyển nhượng.
+          </p>
+          <p><b>5. Hành vi bị cấm.</b> Bạn không được:</p>
+          <ul>
+            <li>
+              sao chép, tải xuống, quay màn hình, phát tán, bán lại hoặc đăng
+              lại nội dung;
+            </li>
+            <li>
+              gỡ watermark, vượt qua các biện pháp bảo vệ nội dung hoặc chặn
+              truy cập;
+            </li>
+            <li>cho người dưới 18 tuổi truy cập nội dung;</li>
+            <li>
+              quấy rối, đe dọa hoặc lừa đảo chúng tôi hay người dùng khác;
+            </li>
+            <li>
+              gửi nội dung bất hợp pháp qua form liên hệ hoặc bất kỳ kênh nào
+              của website.
+            </li>
+          </ul>
+          <p>
+            <b>6. Chấm dứt.</b> Chúng tôi có thể chấm dứt hoặc đình chỉ tài
+            khoản nếu bạn vi phạm điều khoản, mà không hoàn tiền cho phần thời
+            gian còn lại của kỳ đó, trừ khi luật bắt buộc khác.
+          </p>
+          <p>
+            <b>7. Miễn trừ và giới hạn trách nhiệm.</b> Website được cung cấp
+            "nguyên trạng". Trong phạm vi luật cho phép, chúng tôi không chịu
+            trách nhiệm cho thiệt hại gián tiếp phát sinh từ việc sử dụng
+            website, và tổng trách nhiệm không vượt quá số tiền bạn đã trả trong
+            [3] tháng gần nhất.
+          </p>
+          <p>
+            <b>8. Nội dung vi phạm.</b> Nếu bạn cho rằng có nội dung vi phạm
+            quyền của mình, hãy dùng mục "Báo cáo vi phạm và gỡ nội dung" bên
+            dưới.
+          </p>
+          <p>
+            <b>9. Luật áp dụng.</b> Các điều khoản này chịu sự điều chỉnh của
+            pháp luật [quốc gia đăng ký]. Tranh chấp thuộc thẩm quyền tòa án
+            [nơi có thẩm quyền], trừ khi luật nơi bạn cư trú quy định khác.
+          </p>
+          <p>
+            <b>10. Thay đổi.</b> Chúng tôi có thể cập nhật điều khoản; việc tiếp
+            tục sử dụng sau khi cập nhật được xem là chấp nhận. Liên hệ:
+            [legal@ten-mien].
+          </p>
+          <h3 id="privacy">Chính sách quyền riêng tư</h3>
+          <p>
+            Cập nhật lần cuối: [ngày/tháng/năm]. [Tên pháp lý công ty] là bên
+            kiểm soát dữ liệu. Chúng tôi chỉ thu thập dữ liệu cần thiết để vận
+            hành dịch vụ.
+          </p>
+          <p><b>Dữ liệu chúng tôi thu thập:</b></p>
+          <ul>
+            <li>email và mật khẩu (đã băm) khi bạn đăng ký;</li>
+            <li>
+              thông tin gói và lịch sử giao dịch (số tiền, ngày, trạng thái),
+              không bao gồm số thẻ;
+            </li>
+            <li>nội dung bạn gửi qua form liên hệ hoặc báo cáo vi phạm;</li>
+            <li>
+              dữ liệu kỹ thuật cơ bản (địa chỉ IP, loại trình duyệt) để bảo mật
+              và chống lạm dụng;
+            </li>
+            <li>
+              kết quả xác minh tuổi từ đơn vị thứ ba (nếu có), chúng tôi chỉ giữ
+              kết quả đạt/không đạt, không giữ giấy tờ.
+            </li>
+          </ul>
+          <p>
+            <b>Mục đích sử dụng.</b> Cung cấp và quản lý tài khoản, xử lý thanh
+            toán, hỗ trợ khách hàng, phòng chống gian lận và tuân thủ pháp luật.
+            Chúng tôi không bán dữ liệu cá nhân của bạn.
+          </p>
+          <p>
+            <b>Chia sẻ dữ liệu.</b> Chỉ với các bên xử lý cần thiết: nhà cung
+            cấp thanh toán [tên], dịch vụ email/biểu mẫu [tên], dịch vụ xác minh
+            tuổi [tên], dịch vụ lưu trữ [tên], hoặc cơ quan có thẩm quyền khi
+            pháp luật yêu cầu.
+          </p>
+          <p>
+            <b>Lưu trữ và bảo mật.</b> Dữ liệu được mã hóa khi truyền tải và lưu
+            ở mức cần thiết. Chúng tôi giữ dữ liệu tài khoản trong thời gian bạn
+            sử dụng dịch vụ và tối đa [24] tháng sau đó, trừ khi luật yêu cầu
+            lưu lâu hơn (ví dụ hồ sơ kế toán).
+          </p>
+          <p>
+            <b>Quyền của bạn.</b> Bạn có thể yêu cầu truy cập, chỉnh sửa, xóa
+            hoặc xuất dữ liệu, và rút lại sự đồng ý, bằng cách gửi email tới
+            [privacy@ten-mien]. Chúng tôi phản hồi trong [30] ngày.
+          </p>
+          <p>
+            <b>Trẻ em.</b> Website không dành cho người dưới 18 tuổi. Nếu phát
+            hiện tài khoản của người chưa đủ tuổi, chúng tôi sẽ xóa ngay.
+          </p>
+          <p>
+            <b>Liên hệ.</b> [privacy@ten-mien], [Tên pháp lý công ty], [địa
+            chỉ].
+          </p>
+          <h3 id="cookies">Chính sách cookie</h3>
+          <p>
+            Cookie là tệp nhỏ lưu trên thiết bị của bạn. Website chỉ dùng các
+            cookie thật sự cần thiết:
+          </p>
+          <ul>
+            <li>
+              <b>age_ok</b>: ghi nhớ bạn đã xác nhận đủ 18 tuổi, lưu trong [30]
+              ngày (có thể đổi theo cấu hình);
+            </li>
+            <li>
+              <b>phiên đăng nhập</b> [tên cookie]: giữ trạng thái đăng nhập, xóa
+              khi hết phiên hoặc đăng xuất;
+            </li>
+            <li>
+              <b>cookie của nhà cung cấp thanh toán</b>: phục vụ chống gian lận
+              khi bạn thanh toán, do [tên nhà cung cấp] quản lý.
+            </li>
+          </ul>
+          <p>
+            Chúng tôi không dùng cookie quảng cáo hay theo dõi hành vi. [Nếu sau
+            này thêm công cụ phân tích như Google Analytics, hãy cập nhật mục
+            này và bổ sung thông báo xin đồng ý cookie.]
+          </p>
+          <p>
+            Bạn có thể xóa hoặc chặn cookie trong cài đặt trình duyệt. Nếu chặn
+            cookie cần thiết, bạn có thể phải xác nhận độ tuổi lại mỗi lần và
+            không đăng nhập được.
+          </p>
+          <h3 id="refund">Chính sách hoàn tiền</h3>
+          <p>
+            Vì đây là nội dung số được cung cấp ngay sau khi thanh toán, các
+            khoản đã thanh toán thường <b>không được hoàn lại</b>, trừ các
+            trường hợp sau:
+          </p>
+          <ul>
+            <li>bạn bị tính phí hai lần hoặc sai số tiền;</li>
+            <li>
+              bạn bị trừ tiền nhưng không nhận được quyền truy cập do lỗi kỹ
+              thuật mà chúng tôi không khắc phục được;
+            </li>
+            <li>
+              giao dịch không do bạn thực hiện (chúng tôi sẽ phối hợp xác minh
+              cùng nhà cung cấp thanh toán);
+            </li>
+            <li>
+              trường hợp luật bảo vệ người tiêu dùng nơi bạn cư trú bắt buộc
+              hoàn tiền.
+            </li>
+          </ul>
+          <p>
+            <b>Hủy gói.</b> Bạn có thể hủy gia hạn tự động bất cứ lúc nào trong
+            khu vực thành viên. Quyền truy cập được giữ đến hết kỳ đã thanh
+            toán, và không có khoản hoàn lại cho phần chưa dùng của kỳ đó.
+          </p>
+          <p>
+            <b>Cách yêu cầu hoàn tiền.</b> Gửi email tới [support@ten-mien]
+            trong vòng [14] ngày kể từ ngày giao dịch, kèm email tài khoản và mã
+            giao dịch. Chúng tôi phản hồi trong [5] ngày làm việc; khoản hoàn
+            (nếu được chấp nhận) trả về phương thức thanh toán ban đầu, thời
+            gian ghi có do ngân hàng quyết định.
+          </p>
+          <p>
+            Vui lòng liên hệ chúng tôi trước khi khiếu nại với ngân hàng; tranh
+            chấp giao dịch (chargeback) không hợp lệ có thể dẫn đến khóa tài
+            khoản.
+          </p>
+          <h3 id="consent">Xác nhận người trưởng thành</h3>
+          <p>
+            Mọi người xuất hiện trong nội dung đều là người trưởng thành, đã
+            đồng ý bằng văn bản. Hồ sơ xác minh danh tính, độ tuổi và văn bản
+            đồng ý được lưu giữ. [Xác nhận lại với luật sư theo quy định nơi bạn
+            đăng ký.]
+          </p>
+          <h3 id="takedown">Báo cáo vi phạm và gỡ nội dung (DMCA)</h3>
+          <form data-demo>
+            <input type="email" placeholder="Email của bạn" required /><input
+              placeholder="Đường dẫn nội dung cần gỡ"
+              required
+            /><textarea placeholder="Mô tả vi phạm" required></textarea
+            ><button class="btn">Gửi báo cáo</button>
+          </form>
+          <p>Email pháp lý: Hungxhamster@gmail.com/p></p>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Hungxhamster.sex · phường Gay xã skibidi tỉnh sex · MSDN 3667 ·
+          campuchia
+        </p>
+        <p>
+          <a href="#terms">Điều khoản</a> <a href="#privacy">Quyền riêng tư</a>
+          <a href="#cookies">Cookie</a> <a href="#refund">Hoàn tiền</a>
+          <a href="#takedown">Báo cáo vi phạm</a>
+        </p>
+        <p class="warn-f">
+          Nội dung người lớn (18+). Chỉ dành cho người từ đủ 18 tuổi.
+        </p>
+      </footer>
+
+      <dialog id="pay">
+        <h3 id="pay-title">Thanh toán</h3>
+        <p>
+          Khoản thanh toán hiển thị kín đáo trên sao kê dưới tên:
+          <b>[Tên giao dịch trung tính]</b>.
+        </p>
+        <div class="slot">
+          [Dán link thanh toán hoặc mã nhúng của CCBill / Segpay / Epoch tại
+          đây]
+        </div>
+        <form method="dialog" style="margin-top: 1rem">
+          <button class="btn ghost">Đóng</button>
+        </form>
+      </dialog>
+    </template>
+
+    <script>
+      /* ===== CẤU HÌNH ===== */
+      const CONFIG = {
+        ageDays: 0, // thời hạn ghi nhớ xác nhận tuổi
+        isMember: false, // demo: đổi true để bỏ làm mờ thư viện (chỉ để xem giao diện, KHÔNG phải bảo mật)
+        payLinks: { Tháng: "", Quý: "", Năm: "" }, // dán link thanh toán hosted của nhà cung cấp; để trống = hiện khung mẫu
+      };
+
+      /* ===== Cổng tuổi: cookie có thời hạn, dự phòng localStorage khi mở file:// ===== */
+      const KEY = "age_ok";
+      function isOk() {
+        if (CONFIG.ageDays <= 0) return false; // ageDays = 0: hỏi lại ở mọi lần truy cập
+        try {
+          if (document.cookie.split("; ").includes(KEY + "=1")) return true;
+        } catch (e) {}
+        try {
+          return +localStorage.getItem(KEY) > Date.now();
+        } catch (e) {
+          return false;
+        }
+      }
+      function remember() {
+        const ms = CONFIG.ageDays * 864e5;
+        try {
+          document.cookie =
+            `${KEY}=1; max-age=${ms / 1000}; path=/; SameSite=Lax` +
+            (location.protocol === "https:" ? "; Secure" : "");
+        } catch (e) {}
+        try {
+          localStorage.setItem(KEY, Date.now() + ms);
+        } catch (e) {}
+      }
+      function enter() {
+        document
+          .getElementById("app")
+          .append(document.getElementById("site").content.cloneNode(true));
+        document.getElementById("gate").remove();
+        init();
+      }
+      document.getElementById("yes").onclick = () => {
+        remember();
+        enter();
+      };
+      // Thêm ?gate vào đường dẫn (vd: index.html?gate) để xóa ghi nhớ và xem lại cổng tuổi
+      if (location.search.includes("gate")) {
+        try {
+          localStorage.removeItem(KEY);
+        } catch (e) {}
+        try {
+          document.cookie = KEY + "=; max-age=0; path=/";
+        } catch (e) {}
+      }
+      if (isOk()) enter();
+      else document.getElementById("yes").focus();
+
+      /* ===== Giao diện sau khi vào ===== */
+      function init() {
+        const pages = [...document.querySelectorAll(".page")];
+        const legal = [
+          "terms",
+          "privacy",
+          "cookies",
+          "refund",
+          "consent",
+          "takedown",
+        ];
+        const route = () => {
+          const raw = location.hash.slice(1) || "home",
+            h = legal.includes(raw) ? "legal" : raw;
+          pages.forEach((p) => (p.hidden = p.id !== h));
+          if (h === "legal") document.getElementById(raw)?.scrollIntoView();
+        };
+        addEventListener("hashchange", route);
+        route();
+
+        const lib = document.getElementById("lib");
+        const ITEMS = [
+          { title: "Tiêu đề 1", img: "1.jpg" },
+          { title: "Tiêu đề 2", img: "2.jpg" },
+          // thêm hoặc bớt dòng tùy số ảnh
+        ];
+        ITEMS.forEach((it) => {
+          const d = document.createElement("div");
+          d.className = "ph";
+          d.style.backgroundImage = `url(${it.img})`;
+          d.innerHTML = `<span>${it.title}</span>`;
+          lib.append(d);
+        });
+        document.getElementById("lock-note").hidden = CONFIG.isMember;
+        // Hiệu ứng: thẻ hiện dần lần lượt khi cuộn tới
+        const io = new IntersectionObserver(
+          (es) =>
+            es.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+                io.unobserve(e.target);
+              }
+            }),
+          { threshold: 0.15 },
+        );
+        document
+          .querySelectorAll("#lib .ph, .plans article")
+          .forEach((el, i) => {
+            el.classList.add("rv");
+            el.style.setProperty("--i", i % 8);
+            io.observe(el);
+          });
+
+        const pay = document.getElementById("pay");
+        document.querySelectorAll("[data-plan]").forEach(
+          (b) =>
+            (b.onclick = () => {
+              const plan = b.dataset.plan,
+                url = CONFIG.payLinks[plan];
+              if (url) return (location.href = url);
+              document.getElementById("pay-title").textContent =
+                "Thanh toán – gói " + plan.toLowerCase();
+              pay.showModal();
+            }),
+        );
+
+        document.querySelectorAll("form[data-demo]").forEach(
+          (f) =>
+            (f.onsubmit = (e) => {
+              e.preventDefault();
+              if (f.website?.value) return;
+              alert(
+                "Biểu mẫu mẫu: chưa gửi đi đâu. Xem chú thích trong file để nối dịch vụ form.",
+              );
+            }),
+        );
+
+        document.addEventListener(
+          "contextmenu",
+          (e) => e.target.closest(".ph, img, video") && e.preventDefault(),
+        );
+        document.addEventListener(
+          "dragstart",
+          (e) => e.target.closest("img, video") && e.preventDefault(),
+        );
+      }
+    </script>
+  </body>
+</html>
